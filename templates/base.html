@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="{% static 'admin/favicon_io/favicon.ico' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'admin/favicon_io/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{% static 'css.css' %}">
+</head>
+<body>
+    <h1>Meu Projeto Django</h1>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    
+    <footer>
+        Este é o rodapé do projeto.
+    </footer>
+</body>
+</html>
